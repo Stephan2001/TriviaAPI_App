@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/aclonica"
+        android:text="TRIVIA"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/select_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select difficulty"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/select_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select category"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginBottom="288dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/aclonica"
+        android:text="Generate questions"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>
